@@ -1,0 +1,16 @@
+random_state: 42
+test_size: 0.2  
+
+train_columns:
+  - lat
+  - lon
+  - minutes_remaining
+  - period
+  - playoffs
+  - shot_distance
+
+prod_predictions_path: data/07_model_output/predictions_prod.parquet
+metrics_paths:
+  logistic_model_metrics: data/08_reporting/logistic_model_metrics.json
+  decision_tree_model_metrics: data/08_reporting/decision_tree_model_metrics.json
+  best_model_metrics: data/08_reporting/best_model_metrics.json

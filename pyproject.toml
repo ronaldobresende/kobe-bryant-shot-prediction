@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+requires-python = ">=3.9"
+name = "kobe_bryant_shot_prediction"
+readme = "README.md"
+dynamic = [ "version",]
+dependencies = [ "ipython>=8.10", "jupyterlab>=3.0", "notebook", "kedro~=0.19.12",]
+
+[project.scripts]
+kobe-bryant-shot-prediction = "kobe_bryant_shot_prediction.__main__:main"
+
+[project.optional-dependencies]
+docs = [ "docutils<0.21", "sphinx>=5.3,<7.3", "sphinx_rtd_theme==2.0.0", "nbsphinx==0.8.1", "sphinx-autodoc-typehints==1.20.2", "sphinx_copybutton==0.5.2", "ipykernel>=5.3, <7.0", "Jinja2<3.2.0", "myst-parser>=1.0,<2.1",]
+
+[tool.kedro]
+package_name = "kobe_bryant_shot_prediction"
+project_name = "kobe-bryant-shot-prediction"
+kedro_init_version = "0.19.12"
+tools = "['Documentation', 'Data Structure']"
+example_pipeline = "False"
+source_dir = "src"
+
+[project.entry-points."kedro.hooks"]
+
+[tool.setuptools.dynamic.version]
+attr = "kobe_bryant_shot_prediction.__version__"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false
+
+[tool.kedro_telemetry]
+project_id = "1b7db3b69a494a8282fed88f62a612a9"

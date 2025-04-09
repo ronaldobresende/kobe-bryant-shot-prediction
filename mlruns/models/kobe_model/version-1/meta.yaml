@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1744226612499
+current_stage: None
+description: null
+last_updated_timestamp: 1744226612499
+name: kobe_model
+run_id: f291236509cd417bb7602837e7dd5cd4
+run_link: null
+source: file:///C:/projects/python/kobe-bryant-shot-prediction/mlruns/145511593292461386/f291236509cd417bb7602837e7dd5cd4/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/projects/python/kobe-bryant-shot-prediction/mlruns/145511593292461386/f291236509cd417bb7602837e7dd5cd4/artifacts/model
+user_id: null
+version: 1

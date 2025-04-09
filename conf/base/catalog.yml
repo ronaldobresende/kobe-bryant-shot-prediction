@@ -1,0 +1,51 @@
+raw_data_dev:
+  type: pandas.ParquetDataset
+  filepath: data/01_raw/dataset_kobe_dev.parquet
+
+raw_data_prod:
+  type: pandas.ParquetDataset
+  filepath: data/01_raw/dataset_kobe_prod.parquet
+
+filtered_data:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/data_filtered.parquet
+
+train_data:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/base_train.parquet
+
+test_data:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/base_test.parquet
+
+logistic_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/logistic_model.pkl
+
+decision_tree_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/decision_tree_model.pkl
+
+final_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/final_model.pkl
+
+prod_predictions:
+  type: pandas.ParquetDataset
+  filepath: data/07_model_output/predictions_prod.parquet
+
+logistic_model_metrics:
+  type: pandas.JSONDataset
+  filepath: data/08_reporting/logistic_model_metrics.json
+
+decision_tree_model_metrics:
+  type: pandas.JSONDataset
+  filepath: data/08_reporting/decision_tree_model_metrics.json
+
+best_model_metrics:
+  type: pandas.JSONDataset
+  filepath: data/08_reporting/best_model_metrics.json  
+
+
+
+

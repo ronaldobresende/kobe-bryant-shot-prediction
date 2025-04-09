@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/projects/python/kobe-bryant-shot-prediction/mlruns/145511593292461386/f432e4c3766948428889f2591f85387b/artifacts
+end_time: 1744226612927
+entry_point_name: ''
+experiment_id: '145511593292461386'
+lifecycle_stage: active
+run_id: f432e4c3766948428889f2591f85387b
+run_name: PipelineAplicacao
+run_uuid: f432e4c3766948428889f2591f85387b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744226612849
+status: 3
+tags: []
+user_id: ronal
