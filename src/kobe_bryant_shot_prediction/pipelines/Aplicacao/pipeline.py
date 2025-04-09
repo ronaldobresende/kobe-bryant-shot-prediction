@@ -28,4 +28,3 @@ def create_pipeline(**kwargs) -> Pipeline:
         )
     ])
 
-#mlflow models serve  -m models:/kobe_model/1 --env-manager=local  --port 5001

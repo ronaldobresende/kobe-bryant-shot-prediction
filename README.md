@@ -1,6 +1,6 @@
 # 🏀 Modelo de Classificação - Dataset Kobe Bryant
 
-Este projeto utiliza ferramentas modernas de machine learning para construir um pipeline completo com foco em classificação de jogadas do Kobe Bryant. O objetivo é avaliar a performance dos modelos, sua aderência à base de produção e estratégias de monitoramento e re-treinamento.
+Este projeto utiliza ferramentas modernas de machine learning para construir um pipeline completo com foco em classificação de jogadas do Kobe Bryant. O objetivo é avaliar a performance dos modelos, sua aderência à base de produção e estratégias de monitoramento e retreinamento.
 
 ---
 
@@ -26,7 +26,7 @@ Este projeto utiliza ferramentas modernas de machine learning para construir um 
 
 | Artefato                              | Descrição |
 |---------------------------------------|-----------|
-| `dataset_kobe_{dev,prod}.parquet`     | Dados brutos de desevovvimento e produção. |
+| `dataset_kobe_{dev,prod}.parquet`     | Dados brutos de desenvolvimento e produção. |
 | `data_filtered.parquet`               | Dados tratados sem nulos. |
 | `base_train.parquet`, `base_test.parquet` | Dados separados para treino e teste. |
 | `decision_tree_model.pkl`             | Modelo treinado com árvore de decisão. |
@@ -99,9 +99,9 @@ Apesar da árvore de decisão ter um F1 score um pouco melhor, o log loss dela �
 
 ### 🚦 6. PipelineAplicacao
 
-### Aderente à nova base
+### Aderência do modelo à base de produção
 
-**O desempenho do modelo na base de produção mostrou que ele não é aderente a nova base.** 
+**O desempenho do modelo na base de produção mostrou que ele não é aderente à nova base.** 
 
 **Métricas observadas:**
 - `log_loss_prod`: 4.4235 (muito alto)
@@ -114,7 +114,7 @@ O modelo não conseguiu prever nenhum acerto da classe positiva (F1 = 0.0), e er
 
 ---
 
-### 🧩 7. Monitoramento da a saúde do modelo
+### 🧩 7. Monitoramento da saúde do modelo
 
 Quando a variável target está disponível em produção, a saúde do modelo pode ser monitorada diretamente através de métricas como `log_loss`, `F1-score` e acurácia. Essas métricas são registradas a cada execução com o MLflow, permitindo comparações com versões anteriores do modelo.
 

@@ -36,31 +36,3 @@ def prepare_train_test(data: pd.DataFrame, test_size: float, random_state: int):
     mlflow.log_metric("test_size", test_data.shape[0])
 
     return train_data, test_data
-
-
-
-
-
-
-
-
-
-
-# def split_features_target(data: pd.DataFrame):
-#     X = data.drop(columns=["shot_made_flag"])
-#     y = data["shot_made_flag"]
-#     return X, y
-
-# def split_train_test(X: pd.DataFrame, y: pd.Series, test_size: float, random_state: int):
-#     X_train, X_test, y_train, y_test = train_test_split(
-#         X, y, test_size=test_size, stratify=y, random_state=random_state
-#     )
-
-#     train_data = pd.concat([X_train, y_train], axis=1)
-#     test_data = pd.concat([X_test, y_test], axis=1)
-
-#     mlflow.log_param("test_size", test_size)
-#     mlflow.log_metric("train_size", train_data.shape[0])
-#     mlflow.log_metric("test_size", test_data.shape[0])
-
-#     return train_data, test_data
